@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+li, button, a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 10%;
+}
+
+.logo{
+    font-family: Inter,sans-serif;
+    font-size: 300%;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0% 3px;
+    font-family: Inter,sans-serif;
+}
+
+.social{
+    width: 40px;
+    height: auto;
+}
+
+.text_center{
+    align-self: center;
+}
+
+.maxtext{
+    font-family: Inter,sans-serif;
+    font-size: 400%;
+    padding: 0% 2%;
+}
+
+.bigtext{
+    font-family: Inter,sans-serif;
+    font-size: 300%;
+    padding: 0% 2%;
+}
+
+.medtext{
+    font-family: Inter,sans-serif;
+    font-size: 200%;
+}
+
+.smalltext{
+    font-family: Inter,sans-serif;
+    font-size: 100%;
+}
+
+.image1{
+    width: 80%;
+    height: auto;
+}
+
+.image2{
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+}
+
+.image3{
+    width: 35%;
+    height: auto;
+    padding: 5% 10px;
+}
+
+.greypg{
+    background-color:rgb(238, 238, 238);
+    border-radius: 50%;
+}
+
+.quotes{
+    padding: 5%;
+    font-family: Inter,sans-serif;
+    max-width: 90%;
+    margin: auto;
+}
+
+.page1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 5% 10%;
+}
+
+.page2{
+    display: flex;
+    justify-content:space-between;
+    padding: 5% 10%;
+}
+
+.page3{
+    display: flex;
+    padding: 5% 10%;
+    justify-content: space-evenly;
+}
+
+.page4{
+    display: flex;
+    justify-content: center;
+}
+
+.page5{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.card1{
+    display: block;
+    margin-top: auto;
+}
+
+.card2{
+    padding: 0% 10%;
+}
+
+.card3{
+    border-radius: 10%;
+    background-color: rgba(236, 236, 236, 0.781);
+    padding: 3%;
+    width: 300px;
+}
+
+.card4{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0%;
+}
+
+.text1{
+    width:70%;
+    padding: 5% 5%;
+}
+
+.text2{
+    max-width: 50%;
+    margin: auto;
+}
+
+button{
+    font-size: large;
+    background-color:rgb(214, 214, 214);
+    color: black;
+    font-weight: 400;
+    font-family: Inter,sans-serif;  
+    padding: 8px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(156, 156, 156);
+    font-size: larger;
+}
+
+footer{
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 1020px){
+    .page1{
+        flex-direction: column;
+    }
+
+    .image1{
+        margin: auto;
+        width: 100%;
+    }
+
+    .page2{
+        flex-direction: column;
+    }
+
+    .image2{
+        margin: auto;
+        width: 100%;
+    }
+
+    .maxtext{
+        font-size: 250%;
+    }
+    
+    .bigtext{
+        font-size: 200%;
+    }
+
+    .medtext{
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .page3{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card3{
+        margin-top: 5%;
+    }
+
+    .page4{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image3{
+        padding: 1% 0%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    .card4{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text1{
+        width: 90%;
+    }
+
+    .greypg{
+        border-radius: 45%;
+    }
+}
