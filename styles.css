@@ -9,6 +9,7 @@ li, button, a{
     text-decoration: none;
 }
 
+
 header{
     display: flex;
     flex-direction: row;
@@ -17,27 +18,45 @@ header{
     padding: 3% 10%;
 }
 
-.logo{
+.topnav{
+    width: 97.5%;
+}
+
+.topnav #myLinks {
+    display: none;
+    text-align: end;
+    background-color: #8AC1EC;
+}
+  
+.topnav a {
+    color:black;
+    padding: 1.2% 1%;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: white;
+    display: block;
+    position:absolute;
+    top: 5.5%;
+    right: 12%;
+}
+
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .logo {
     font-family: Inter,sans-serif;
     font-size: 300%;
     cursor: pointer;
     margin-right: auto;
+    height: 350%;
 }
-
-.nav_links{
-    list-style: none;
-}
-
-.nav_links li{
-    display: inline-block;
-    padding: 0% 3px;
-    font-family: Inter,sans-serif;
-}
-
-.social{
-    width: 40px;
-    height: auto;
-}
+ 
 
 .text_center{
     align-self: center;
